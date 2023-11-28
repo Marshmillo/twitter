@@ -17,5 +17,6 @@ COPY --from=BUILD_IMAGE /app/package.json ./package.json
 COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
 COPY --from=BUILD_IMAGE /app/.next ./.next
 COPY --from=BUILD_IMAGE /app/public ./public
+# expose port
 EXPOSE 3000
 CMD ["yarn", "start"]
