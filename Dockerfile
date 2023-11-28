@@ -16,6 +16,8 @@ COPY . .
 COPY --from=dependencies /twitter/node_modules ./node_modules
 RUN yarn build
 
+# Generación de Prisma
+RUN npx prisma generate
 
 # Etapa 3: Imagen de Producción
 FROM node:lts as runner
