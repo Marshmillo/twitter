@@ -1,0 +1,37 @@
+# Directorios generados
+node_modules/
+.cache/
+.next/
+out/
+dist/
+
+# Archivos generados
+package-lock.json
+
+
+# Configuración local (puede variar según tu editor)
+.vscode/
+.idea/
+
+# Archivos de entorno (no deben incluirse en el control de versiones)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependiendo de tu stack, puedes tener otros archivos o directorios para ignorar
+# Por ejemplo, si usas TypeScript
+*.tsbuildinfo
+
+# Si usas ESLint, ignora archivos generados por ESLint
+.eslintcache
+
+# Si usas Prettier, ignora archivos generados por Prettier
+/prettier.config.js
+
+# Logs y archivos de errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+error.log
